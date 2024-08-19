@@ -15,24 +15,30 @@ const Navbar = () => {
     <>
       {/* Left Sidebar */}
       <div
-        className={`fixed top-0 left-0 w-22 h-full transition-transform z-10 duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}
+        className={`fixed top-0 left-0 w-22 h-full transition-transform z-10 duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'
+          } md:translate-x-0`}
       >
-        <div className="w-16 m-2 rounded-2xl h-[98vh] bg-white shadow-sm p-2 py-4">
-          <Image src="/logo.png" alt="Logo" width={50} height={50} />
-          <nav className="mt-8 flex flex-col gap-4">
-            <div className='bg-primary rounded-full w-9 h-9 text-white flex items-center justify-center mx-auto'>
-              <DashboardIcon className="h-5 w-5" />
-            </div>
-            <div className='hover:bg-primary/45 hover:text-white rounded-full w-9 h-9 flex items-center justify-center mx-auto'>
-              <ArchiveIcon className="h-5 w-5" />
-            </div>
-            <div className='hover:bg-primary/45 hover:text-white rounded-full w-9 h-9 flex items-center justify-center mx-auto'>
-              <CopyIcon className="h-5 w-5" />
-            </div>
-            <div className='hover:bg-primary/45 hover:text-white rounded-full w-9 h-9 flex items-center justify-center mx-auto'>
-              <QuestionMarkCircledIcon className="h-5 w-5" />
-            </div>
-          </nav>
+        <div className="w-16 m-2 rounded-2xl h-[98vh] bg-white shadow-sm p-2 py-4 flex flex-col">
+          <div>
+            <Image src="/logo.png" alt="Logo" width={50} height={50} />
+            <nav className="mt-8 flex flex-col gap-4">
+              <div className='bg-primary rounded-full w-9 h-9 text-white flex items-center justify-center mx-auto'>
+                <DashboardIcon className="h-5 w-5" />
+              </div>
+              <div className='hover:bg-primary/45 hover:text-white rounded-full w-9 h-9 flex items-center justify-center mx-auto'>
+                <ArchiveIcon className="h-5 w-5" />
+              </div>
+              <div className='hover:bg-primary/45 hover:text-white rounded-full w-9 h-9 flex items-center justify-center mx-auto'>
+                <CopyIcon className="h-5 w-5" />
+              </div>
+              <div className='hover:bg-primary/45 hover:text-white rounded-full w-9 h-9 flex items-center justify-center mx-auto'>
+                <QuestionMarkCircledIcon className="h-5 w-5" />
+              </div>
+            </nav>
+          </div>
+          <div className='mt-auto flex justify-center'>
+            <Image src="/user.png" alt="user" width={30} height={30} />
+          </div>
         </div>
       </div>
 
