@@ -1,11 +1,15 @@
-import React from 'react'
+import { getRandomColor } from '@/lib/utils'
 import { Badge } from './ui/badge'
 import Image from 'next/image'
 
 function CourseworkCard() {
+
+  const color = getRandomColor()
+
   return (
     <>
-      <div className='border rounded-[10px] shadow col-span-1 h-40 bg-gradient-to-r from-slate-100 to-primary/10 p-[4px] flex'>
+      <div className={`border rounded-[10px] shadow col-span-1 h-40 bg-gradient-to-r from-slate-50 ${color} p-[4px] flex`}>
+
         <div className='rounded-[10px] h-full w-[250px] border bg-white'>
         </div>
         <div className='pl-2'>

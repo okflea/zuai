@@ -2,6 +2,7 @@ import CourseworkCard from "@/components/CourseworkCard";
 import EvaluateForm from "@/components/EvaluateForm";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function Home() {
   return (
@@ -26,12 +27,40 @@ export default function Home() {
         <div className="w-full h-auto py-6 md:py-8 space-y-4">
           <p className="font-semibold text-muted-foreground">My Coursework</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <CourseworkCard />
-            <CourseworkCard />
+            {[1, 2].map((i) => (
+              <CourseworkCard key={i} />
+            ))}
+
           </div>
           <div className="flex justify-center mt-4">
-            <Button variant="ghost">View All</Button>
+            <Button variant="ghost" className="text-muted-foreground">View All</Button>
           </div>
+        </div>
+        {/*Explore Coursework */}
+
+        <div className="w-full h-auto py-6 md:py-8 space-y-4">
+          <p className="font-semibold text-muted-foreground">Explore Coursework</p>
+          <Tabs defaultValue="all" className="min-h-[400px]" >
+            <TabsList>
+              <TabsTrigger value="all">All</TabsTrigger>
+              <TabsTrigger value="ia">IA Example</TabsTrigger>
+              <TabsTrigger value="ee">EE Example</TabsTrigger>
+              <TabsTrigger value="io">IO Example</TabsTrigger>
+              <TabsTrigger value="tok">Tok Example</TabsTrigger>
+            </TabsList>
+            <TabsContent value="all">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[1, 2, 3, 4].map((i) => (
+                  <CourseworkCard key={i} />
+                ))}
+
+              </div>
+            </TabsContent>
+            <TabsContent value="ia"> Nothing here</TabsContent>
+            <TabsContent value="ee"> Nothing here</TabsContent>
+            <TabsContent value="io"> Nothing here</TabsContent>
+            <TabsContent value="tok">Nothing here</TabsContent>
+          </Tabs>
         </div>
       </div>
     </>
