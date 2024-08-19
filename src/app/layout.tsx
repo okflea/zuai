@@ -3,6 +3,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Open_Sans, Roboto_Mono } from 'next/font/google';
 import Navbar from "@/components/Navbar";
+import { Toaster } from "@/components/ui/toaster";
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -35,6 +36,7 @@ export default function RootLayout({
         <main className="pt-16 md:pt-0 md:mx-20"> {/* Adjust padding-top and margin-left */}
           {children}
         </main>
+        <Toaster />
       </body>
     </html>
   );
