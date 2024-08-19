@@ -78,7 +78,7 @@ function EvaluateForm() {
     })
   }
   return (
-    <div className="h-[300px] md:h-[calc(100%-2rem)] border-2 rounded-lg shadow-sm bg-slate-50 flex flex-col items-center justify-center p-5">
+    <div className="min-h-[300px] md:min-h-[calc(100%-2rem)] border-2 rounded-lg shadow-sm bg-slate-50 flex flex-col items-center justify-center p-5">
       <FileUpload setIsFileUploaded={setIsFileUploaded} />
       <div
         className=" h-1/2 w-full py-4 "
@@ -147,7 +147,7 @@ function EvaluateForm() {
             />
             <Button
               disabled={!form.formState.isValid || !isFileUploaded}
-              className="pl-[9px] gap-2 mt-20"
+              className="pl-[9px] gap-2 mt-20 font-semibold"
               type="submit">
               {!form.formState.isValid ?
                 (<Image src="/ai-icon-muted.svg" alt="ai-icon-muted" width={22} height={22} />) :
