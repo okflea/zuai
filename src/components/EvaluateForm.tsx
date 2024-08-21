@@ -25,6 +25,7 @@ import { toast } from "@/components/ui/use-toast"
 import { MultiSelect } from './ui/multiselect'
 import { Input } from './ui/input'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 
 const courseOptions = [
@@ -67,6 +68,7 @@ function EvaluateForm() {
     mode: "onChange"
   })
 
+  const router = useRouter()
   function onSubmit(data: z.infer<typeof FormSchema>) {
     toast({
       title: "You submitted the following values:",
@@ -76,6 +78,7 @@ function EvaluateForm() {
         </pre>
       ),
     })
+    router.push('/result')
   }
   return (
     <div className="min-h-[300px] md:min-h-[calc(100%-2rem)] border-2 rounded-lg shadow-sm bg-slate-50 flex flex-col items-center justify-center p-5">
