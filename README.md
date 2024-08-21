@@ -7,7 +7,7 @@ Welcome to the IB Coursework Evaluation Platform! This project is a web applicat
 <!-- * **Zustand:** A lightweight state management solution for managing application state effectively. -->
 * **Shadcn UI:** A comprehensive component library that simplifies UI development and ensures design consistency.
 
-##  Live Demo: [Your Deployed Link Here]
+##  Live Demo: [https://zuai-rho.vercel.app/]
 
 ##  Figma Design: ZuAi Interface Design
 
