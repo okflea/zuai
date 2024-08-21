@@ -10,7 +10,8 @@ function CourseworkCard() {
     <>
       <div className={`border rounded-[10px] shadow col-span-1 h-40 bg-gradient-to-r from-slate-50 ${color} p-[4px] flex`}>
 
-        <div className='rounded-[10px] h-full w-[250px] border bg-white'>
+        <div className='rounded-[10px] h-full w-[250px] border bg-white p-4'>
+          <Image src="/mock-pdf.png" alt="pdf" width={100} height={100} />
         </div>
         <div className='pl-2'>
           <p className='font-bold text-lg text-ellipsis'>heading</p>
