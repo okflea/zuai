@@ -1,77 +1,96 @@
-##  ZuAi Coursework Evaluation Platform
+# 📚 ZuAi Coursework Evaluation Platform
 
-Welcome to the IB Coursework Evaluation Platform! This project is a web application designed to streamline the evaluation of International Baccalaureate (IB) coursework, closely modeled after the "ZuAi" interface design. The application leverages cutting-edge technologies to deliver a robust and user-friendly experience:
+Welcome to the **ZuAi Coursework Evaluation Platform**! This project is a web application designed to evaluate  coursework, closely modeled after the "ZuAi" interface design. The application is built using the latest technologies, including Next.js 14, TailwindCSS  and Shadcn UI components.
 
-* **Next.js 14:** A powerful framework for building modern web applications.
-* **TailwindCSS:** A utility-first CSS framework for rapid and responsive design.
-<!-- * **Zustand:** A lightweight state management solution for managing application state effectively. -->
-* **Shadcn UI:** A comprehensive component library that simplifies UI development and ensures design consistency.
+🔗 **Live Demo**: [https://zuai-rho.vercel.app/]  
 
-##  Live Demo: [https://zuai-rho.vercel.app/]
+## 🚀 Tech Stack
 
-##  Figma Design: ZuAi Interface Design
-
-##  Tech Stack
-
-* Next.js 14
-* TailwindCSS
-<!-- * Zustand (for state management) -->
-* Shadcn UI (for component library)
+- **Next.js 14**
+- **TailwindCSS**
+<!-- - **Zustand** (for state management) -->
+- **Shadcn UI** (for component library)
 
 ## ✨ Key Features
 
-1. **Effortless File Upload:**
-    * Drag-and-drop functionality for convenient file submission (PDFs only).
-    * Manual file upload option for users who prefer a traditional approach.
-    * Clear file size limit display to avoid file rejection due to size constraints (e.g., "Limit 25 MB per file").
-    * Secure storage of uploaded files using browser local storage for seamless access.
+### 1. File Upload
+- 🖱️ Drag-and-drop functionality for PDF files
+- 📁 Manual file upload option
+- 📏 File size limit display (e.g., "Limit 25 MB per file")
+- 💾 Store uploaded files using browser local storage
 
-2. **Persistent Local Storage:**
-    * Stores uploaded files and their associated metadata locally to ensure data persistence across page reloads, enhancing user experience.
-    * Efficient retrieval of stored files and data for smooth interaction with the platform.
+### 2. Local Storage Implementation
+- 📂 Save uploaded files and their metadata locally
+- 🔄 Ensure persistence of data across page reloads
+- 🚀 Efficient retrieval of stored files and data
 
-3. **Comprehensive Coursework Details Form:**
-    * Dropdowns for "Coursework Type" and "Subject" to facilitate accurate categorization.
-    * Text input field for easy entry of the essay title.
-    * Local storage for coursework details, keeping track of important information alongside the uploaded files.
+### 3. Coursework Details Form
+- 📑 Dropdowns for "Coursework Type" and "Subject"
+- 📝 Text input for essay title
+- 🗂️ Store form data locally with the associated file
 
-4. **Interactive Evaluation Display:**
-    * Visually appealing circular progress indicator to showcase the overall score effectively.
-    * Detailed breakdown of scores by criteria (A, B, C) for a deeper understanding of performance.
-    * Clear display of the evaluation date for reference.
-    * Local storage of evaluation results to maintain a record of past assessments.
+### 4. Evaluation Display
+- 📊 Display overall score with a circular progress indicator
+- 📈 Breakdown of scores by criteria (A, B, C)
+- 📅 Evaluation date display
+- 🔄 Store and retrieve evaluation results locally
 
-5. **Streamlined Coursework List:**
-    * Displays previously uploaded coursework from local storage for easy access and management.
-    * Informative details for each item listed, including title, subject, word count, and other relevant data.
+### 5. Coursework List
+- 📃 Display previously uploaded coursework from local storage
+- 📋 Show title, subject, word count, and other relevant details for each item
 
-6. **Enriching Explore Coursework Section (Planned):**
-    * Implementation of a tabbed interface to categorize and manage different coursework categories (future feature).
-    * Eye-catching grid layout for showcasing coursework examples in a visually appealing manner (future feature).
+### 6. Explore Coursework Section
+- 🗂️ Implement a tabbed interface for different coursework categories
+- 🎨 Create a grid layout for coursework examples
 
-##  Bonus Features (Planned):**
+## 💎 Bonus Features
 
-* **Delightful Animations:** Implement smooth transitions between states for a polished user experience (future feature).
-* **Engaging Micro-interactions:** Enhance user feedback with subtle interactions that improve understanding (future feature).
-* **Motivational User Gratification:** Provide congratulatory messages for good scores and encouraging feedback for areas of improvement (future feature).
-* **Accessibility Best Practices:** Ensure optimal accessibility through proper use of ARIA attributes and comprehensive keyboard navigation support for an inclusive user experience (future feature).
+- 🎞️ **Animations**: Smooth transitions between states
+- 🎯 **Micro-interactions**: Enhanced user feedback
+- 🌟 **User Gratification**: Congratulatory messages for good scores and encouraging feedback for areas of improvement
+- ♿ **Accessibility**: Proper use of ARIA attributes and keyboard navigation support
 
-##  Testing(Planned):**
+## 🧪 Testing(Planned)
 
-* **Unit Tests:** Rigorous unit tests for critical components to guarantee individual functionality (Planned).
-* **Integration Tests:** Comprehensive integration tests to verify the seamless interaction of main user flows (Planned).
+- 🧩 **Unit tests**: For critical components
+- 🔄 **Integration tests**: For main user flows
 
-## ️ Advanced Local Storage Features (Planned):**
+## 🗃️ Advanced Local Storage Features(Planned)
 
-* **Efficient Data Compression:** Implement data compression techniques for optimized storage utilization and faster performance (future feature).
-* **Clear Storage Management:** Offer options to clear local storage entirely or remove individual files (future feature).
-* **Mock API Integration:** Simulate server-side persistence with mock APIs to explore backend integration possibilities (implemented).
+- 🗜️ **Data compression**: For efficient storage
+- 🧹 **Clear storage options**: Option to clear local storage or individual files
+- 🔗 **Mock API integration**: For simulating server-side persistence
 
-## ️ Implementation Notes:**
+## 🛠️ Implementation Notes
 
-* **Mock APIs for Evaluation:** Leveraged tools like MSW (Mock Service Worker) to create mock API calls for the evaluation process, facilitating development and testing (implemented).
-* **Local Storage Reliance:** Currently, all data is stored and retrieved from local storage, ensuring accessibility offline (implemented).
-* **Figma Alignment:** Closely followed the provided Figma design guidelines to maintain a consistent and professional user interface (implemented).
-* **Storage Graceful Handling:** Implemented mechanisms to manage potential storage limitations and provide informative feedback to users when necessary (implemented).
-<!-- * **Zustand for State Management:** Effective use of Zustand to simplify the management of application state across components (implemented). -->
-* **Shadcn UI for Efficiency:** Utilized components from the Shadcn UI library to accelerate development and maintain design
+<!-- - ⚙️ Used mock API calls for the evaluation process with tools like MSW (Mock Service Worker). -->
+- 💾 All data is stored and retrieved from local storage.
+- 🎨 Closely matched the provided Figma designs.
+- 📊 Handled potential storage limitations gracefully, providing user feedback when necessary.
+<!-- - 🧠 Leveraged Zustand for global state management. -->
+- 🧩 Utilized Shadcn UI components to maintain design consistency and accelerate development.
+
+## 📝 Setup Instructions
+
+0. **Clone and install the repository**:
+   ```bash
+   git clone https://github.com/okflea/zuai.git
+   cd zuai
+   bun install
+   bun run dev 
+   ```
+## 🔍 **Assumptions & Design Decisions**
+
+- Data is stored locally to simulate a full-fledged backend.
+- Mock APIs were used for testing and simulating server-side evaluation processes.
+- The design was closely followed with some adjustments for responsiveness and user experience.
+
+🚧 **Challenges Faced**
+
+- **Storage Limits**: Managed potential storage limitations by compressing data and providing clear user feedback.
+- **Design Consistency**: Ensured design consistency by utilizing Shadcn UI components and adhering to the provided Figma design.
+
+🎉 **Conclusion**
+
+This platform successfully meets the requirements of evaluating ZuAi coursework in a user-friendly and responsive manner. The application is equipped with advanced local storage features, user gratification elements, and robust testing to ensure a smooth and reliable user experience.
+
