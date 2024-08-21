@@ -43,7 +43,7 @@ Welcome to the **ZuAi Coursework Evaluation Platform**! This project is a web ap
 - 🗂️ Implement a tabbed interface for different coursework categories
 - 🎨 Create a grid layout for coursework examples
 
-## 💎 Bonus Features
+## 💎 Bonus Features(Planned)
 
 - 🎞️ **Animations**: Smooth transitions between states
 - 🎯 **Micro-interactions**: Enhanced user feedback
